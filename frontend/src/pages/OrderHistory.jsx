@@ -14,7 +14,7 @@ const OrderHistory = () => {
     const fetchOrders = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:1000/api/v1/get-order-history",
+          "https://booknest-ocoi.onrender.com/api/v1/get-order-history",
           { headers }
         );
         setOrderHistory(Array.isArray(res.data.data) ? res.data.data : []);

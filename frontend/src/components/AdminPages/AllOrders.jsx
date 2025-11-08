@@ -22,7 +22,7 @@ const AllOrders = () => {
     const fetch = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:1000/api/v1/get-all-orders",
+          "https://booknest-ocoi.onrender.com/api/v1/get-all-orders",
           { headers }
         );
         setOrderHistory(res.data?.data || []); // ✅ safe

@@ -16,7 +16,7 @@ const UpdateBooks = () => {
     window.scrollTo(0, 0);
     const fetch = async () => {
       const res = await axios.get(
-        `http://localhost:1000/api/v1/get-book-by-id/${id}`
+        ` https://booknest-ocoi.onrender.com/api/v1/get-book-by-id/${id}`
       );
 
       setData({
