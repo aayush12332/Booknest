@@ -43,7 +43,7 @@ const AllOrders = () => {
       const id = OrderHistory[i]?._id; // ✅ safe access
       if (!id) return;
       const response = await axios.put(
-        `http://localhost:1000/api/v1/update-status/${id}`,
+        `https://booknest-ocoi.onrender.com/api/v1/update-status/${id}`,
         Values,
         { headers }
       );
