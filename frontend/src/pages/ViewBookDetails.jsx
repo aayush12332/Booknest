@@ -31,7 +31,7 @@ const ViewBookDetails = () => {
   const addToFavourite = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:1000/api/v1/add-to-favourite",
+        " https://booknest-ocoi.onrender.com/api/v1/add-to-favourite",
         {},
         { headers }
       );
@@ -43,7 +43,7 @@ const ViewBookDetails = () => {
   const addToCart = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:1000/api/v1/add-to-cart",
+        " https://booknest-ocoi.onrender.com/api/v1/add-to-cart",
         {},
         { headers }
       );
@@ -55,7 +55,7 @@ const ViewBookDetails = () => {
   const deleteBook = async () => {
     try {
       const response = await axios.delete(
-        "http://localhost:1000/api/v1/delete-book",
+        " https://booknest-ocoi.onrender.com/api/v1/delete-book",
         { headers }
       );
       alert(response.data.message);
